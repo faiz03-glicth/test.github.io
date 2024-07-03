@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff9b9b; /* Light pink background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+/*container-large*/
+.container-large {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.event-details {
+    margin-top: 20px;
+}
+
+.event-details h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.event-details p {
+    margin-bottom: 10px;
+}
+
+/* Maroon menu bar with white text */
+nav {
+    background-color: #800000; /* Maroon */
+    color: #fff; /* White text */
+    padding: 10px;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+}
+
+/*.log-container {
+    margin-left: auto;
+}*/
+
+/* User icon box */
+.user-box {
+    position: fixed;
+    top: 10px;
+    right: 70px; 
+    width: 50px;
+    height: 50px;
+    background-color: #800000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.user-box img.user-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Logout box */
+.logout-box {
+    position: fixed;
+    top: 10px;
+    /*right: 10px;*/ 
+    width: 60px;
+    height: 50px;
+    background-color: #800000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logout-box a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.logout-box img.logout-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Floating box for links */
+.floating-box {
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    width: 200px;
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.floating-box a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.floating-box a:hover {
+    background-color: #660000;
+}
+
+.student {
+    width: 780px;
+    margin: 20px auto;
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.main-content {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-info, .chatbot {
+    width: 48%;
+}
+
+.contact-info h2, .chatbot h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.contact-info form div {
+    margin-bottom: 10px;
+}
+
+.contact-info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-info input,
+.contact-info textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-info input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info input[type="submit"]:hover {
+    background: #575757;
+}
+
+.chatbot-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    background: #f9f9f9;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.chatbot-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chatbot-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.chatbot-box::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.chatbot-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.auth-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/*container template*/
+.auth-container button:hover {
+    background-color: #575757;
+}
+
+.auth-container .toggle {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.auth-container .toggle a {
+    color: #333;
+    text-decoration: none;
+}
+
+.auth-container .toggle a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+table td form {
+    display: inline;
+}
+
+table td form button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table td form button:hover {
+    background-color: #660000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
